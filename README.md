@@ -2,4 +2,5 @@
 ## This is the repository for the ProjectionDB migration
 
 ### commands for migrations
-- knex migrate:make users
+- knex migrate:make users: creates a migration file to work with
+- knex migrate:latest: migrates the migraton.js files
