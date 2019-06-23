@@ -9,6 +9,11 @@ exports.seed = function(knex, Promise) {
           password: 'testing321', 
           username: 'dominic@gmail.com', 
           confirmPassword: 'testing321' 
+        },
+        {
+          password: 'testing321', 
+          username: 'enzo@gmail.com', 
+          confirmPassword: 'testing321' 
         }
       ]);
     });

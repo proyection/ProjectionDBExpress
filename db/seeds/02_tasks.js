@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
           status: 1,
           limitDate: '2016-06-22 19:10:25-07',
           done: 0,
-          user_id: 8 //this one is tricky
+          user_id: 2 //this one is tricky
         }
       ]);
     });
