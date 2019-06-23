@@ -4,3 +4,4 @@
 ### commands for migrations
 - knex migrate:make users: creates a migration file to work with
 - knex migrate:latest: migrates the migraton.js files
+- knex migrate:rollback: rollsback last migration
