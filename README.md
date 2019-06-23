@@ -6,3 +6,4 @@
 - knex migrate:latest: migrates the migraton.js files
 - knex migrate:rollback: rollsback last migration
 - seed:make 01_users creates a seed file for querying the database
+- knex seed:run: runs the seed and executes the query
