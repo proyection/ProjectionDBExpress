@@ -7,16 +7,6 @@ exports.up = function(knex, Promise) { //creates table
         table.string("username").unique();
         table.string("confirmPassword");
     })
-
-    // knex.schema.createTable("tasks", (table) => {
-    //     table.increments('id'); //create an id have it autoincrement
-    //     table.string("summary");
-    //     table.string("acceptanceCriteria");
-    //     table.integer("status");
-    //     table.timestamp("limitDate", { useTz: true });
-    //     table.integer("done");
-    //     table.foreign('user_id').references('id').inTable('users');
-    // })
 };
 
 exports.down = function(knex, Promise) { //rollbacks to previous state
