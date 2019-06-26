@@ -1,9 +1,10 @@
 
 exports.up = function(knex, Promise) { //creates table
+    
     return knex.schema.createTable("users", (table) => {
         table.increments('id'); //create an id have it autoincrement
         table.string("password");
-        table.string("username");
+        table.string("username").unique();
         table.string("confirmPassword");
     })
 

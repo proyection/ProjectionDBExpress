@@ -1,5 +1,6 @@
 
 exports.up = function(knex, Promise) {
+    
     return knex.schema.createTable("tasks", (table) => {
          table.increments('id'); //create an id have it autoincrement
          table.string("summary");
@@ -14,4 +15,5 @@ exports.up = function(knex, Promise) {
 
 exports.down = function(knex, Promise) {
     return knex.schema.dropTable("tasks");
+    //return knex.raw('DROP TABLE tasks CASCADE');
 };
